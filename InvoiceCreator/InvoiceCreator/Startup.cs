@@ -11,6 +11,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using InvoiceCreator.Controllers;
+using InvoiceCreator.Entities;
 
 namespace InvoiceCreator
 {
@@ -32,11 +34,15 @@ namespace InvoiceCreator
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "InvoiceCreator", Version = "v1" });
             });
+            services.AddDbContext<InvoiceDbContext>();
+            services.AddScoped<InvoiceSeeder>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, InvoiceSeeder seeder)
         {
+            seeder.Seed();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
