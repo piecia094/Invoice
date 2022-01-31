@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Invoice\\InvoiceCreator\\InvoiceCreator\\InvoiceCreator.csproj": {}
+    "C:\\own\\InvoiceCreator\\InvoiceCreator\\InvoiceCreator.csproj": {}
   },
   "projects": {
-    "C:\\Invoice\\InvoiceCreator\\InvoiceCreator\\InvoiceCreator.csproj": {
+    "C:\\own\\InvoiceCreator\\InvoiceCreator\\InvoiceCreator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Invoice\\InvoiceCreator\\InvoiceCreator\\InvoiceCreator.csproj",
+        "projectUniqueName": "C:\\own\\InvoiceCreator\\InvoiceCreator\\InvoiceCreator.csproj",
         "projectName": "InvoiceCreator",
-        "projectPath": "C:\\Invoice\\InvoiceCreator\\InvoiceCreator\\InvoiceCreator.csproj",
-        "packagesPath": "C:\\Users\\Piotr\\.nuget\\packages\\",
-        "outputPath": "C:\\Invoice\\InvoiceCreator\\InvoiceCreator\\obj\\",
+        "projectPath": "C:\\own\\InvoiceCreator\\InvoiceCreator\\InvoiceCreator.csproj",
+        "packagesPath": "C:\\Users\\pioj\\.nuget\\packages\\",
+        "outputPath": "C:\\own\\InvoiceCreator\\InvoiceCreator\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Piotr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pioj\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -44,6 +47,16 @@
               "target": "Package",
               "version": "[5.0.1, )"
             },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
@@ -67,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     }
